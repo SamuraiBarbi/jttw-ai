@@ -37,7 +37,7 @@ memgpt configure
     ? Select LLM backend (select 'openai' if you have an OpenAI compatible proxy): webui
     ? Enter default endpoint: http://0.0.0.0:8000
     ? Select default model wrapper (recommended: airoboros-l2-70b-2.1): airoboros-l2-70b-2.1
-    ? Select your model\'s context window (for Mistral 7B models, this is probably 8k / 8192): 8192
+    ? Select your model's context window (for Mistral 7B models, this is probably 8k / 8192): 8192
     ? Select embedding provider: local
     ? Select default preset: memgpt_chat
     ? Select default persona: sam_pov
