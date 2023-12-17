@@ -17,13 +17,41 @@
 While you can run Ollama as a docker I've found that the Ollama docker version does not work with LiteLLM since LiteLLM automatically serves Ollama rather than presenting Ollama. After determining this incompatiblity was an issue between the docker version of Ollama and LiteLLM I decided to use the sh install method for Ollama instead.
 ```bash
 curl https://ollama.ai/install.sh | sh
+```
+Before launching Ollama I'm going to make sure to kill any existing processes running on port 11434 - the default port for Ollama. This is to ensure that Ollama launches with the expected port.
+```bash
 lsof -ti :11434 | xargs -r kill
 ```
 ## Run Ollama
 ``` bash
 ollama serve
 ```
-
+## Download Ollama Models
+You'll need to download the large language models now. There's various good models to choose from. For the purposes of this project we'll be using a number of different models for different purposes
+Models Trained for Chatting/General Assistance
+```bash
+ollama run openhermes2.5-mistral
+ollama run dolphin2.2-mistral:7b-q6_K
+```
+Models Trained for Coding/Programming
+```bash
+ollama run codellama
+ollama run codeup 
+ollama run deepseek-coder
+ollama run magicoder
+ollama run open-orca-platypus2
+ollama run phind-codellama
+ollama run starcoder
+ollama run wizardcoder
+```
+Models Trains for SQL/Database Queries
+```bash
+ollama run sqlcoder
+```
+Models Trained for Math/Calculations
+```bash
+ollama run wizard-math
+```
 
 ## Install MemGPT
 ```bash
