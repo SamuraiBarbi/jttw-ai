@@ -29,7 +29,6 @@ pip3 cache purge
 pip3 install -e .
 pip3 install transformers
 pip3 install torch
-source $HOME/LLM/jttw/memgpt/memgpt_venv/bin/activate
 export OPENAI_API_KEY=key-to-success
 
 memgpt configure
