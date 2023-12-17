@@ -95,7 +95,7 @@ memgpt configure
     Saving config to /home/owner/.memgpt/config
 ```
 
-## Run MemGPT
+## Test MemGPT
 ```bash
 memgpt run --model dolphin2.2-mistral:7b-q6_K --model-endpoint http://0.0.0.0:8000 --debug
 ```
