@@ -52,6 +52,15 @@ Models Trained for Math/Calculations
 ```bash
 ollama run wizard-math
 ```
+## Test Ollama
+Now that we have Ollama running and serving at least one model we need to test to make sure we're it's working properly.
+To test we're going to send a curl request to the Ollama server making sure to one of the models we've downloaded in the "model": portion of the request. Since I've downloaded openhermes2.5-mistral that is what I'm going to specify in the "model": portion.
+```bash
+curl -X POST -H "Content-Type: application/json" -d '{"model": "openhermes2.5-mistral", "prompt": "Why is the sky blue?"}' http://localhost:11434/api/generate
+```
+
+## Install LiteLLM
+
 
 ## Install MemGPT
 ```bash
