@@ -12,7 +12,19 @@
 - Sweep
 - PromptFoo
 
-## Install MemGPT Python Package
+
+## Install Ollama
+```bash
+curl https://ollama.ai/install.sh | sh
+lsof -ti :11434 | xargs -r kill
+```
+## Run Ollama
+``` bash
+ollama serve
+```
+
+
+## Install MemGPT
 ```bash
 mkdir -p $HOME/LLM/jttw/memgpt/memgpt_venv
 cd $HOME/LLM/jttw/memgpt/
@@ -43,5 +55,9 @@ memgpt configure
     ? Select default human: basic
     ? Select storage backend for archival data: local
     Saving config to /home/owner/.memgpt/config
+```
 
+## Run MemGPT
+```bash
 memgpt run --model dolphin2.2-mistral:7b-q6_K --model-endpoint http://0.0.0.0:8000 --debug
+```
