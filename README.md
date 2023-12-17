@@ -1,17 +1,19 @@
 # jttw-ai
-Jesus Take the Wheel, an A.I. coding assistant for people like me
 
-Our components are going to be:
-Ollama
-LiteLLM
-Guidance
-MemGPT
-AutoGen
-Aider
-Sweep
-PromptFoo
+**Jesus Take the Wheel**, an A.I. coding assistant for people like me
 
-# Install MemGPT python package
+## Components
+- Ollama
+- LiteLLM
+- Guidance
+- MemGPT
+- AutoGen
+- Aider
+- Sweep
+- PromptFoo
+
+## Install MemGPT Python Package
+```bash
 mkdir -p $HOME/LLM/jttw/memgpt/memgpt_venv
 cd $HOME/LLM/jttw/memgpt/
 wget -P $HOME/LLM/jttw/memgpt/ https://github.com/cpacker/MemGPT/archive/refs/heads/master.zip
