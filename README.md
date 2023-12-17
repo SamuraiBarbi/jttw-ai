@@ -27,7 +27,7 @@ lsof -ti :11434 | xargs -r kill
 ollama serve
 ```
 ## Download Ollama Models
-You'll need to download the large language models now. There's various good models to choose from. For the purposes of this project we'll be using a number of different models for different purposes
+We'll need to download the large language models now. There's various good models to choose from. For the purposes of this project we'll be using a number of different models for different purposes
 Models Trained for Chatting/General Assistance
 ```bash
 ollama run openhermes2.5-mistral
