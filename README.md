@@ -23,7 +23,7 @@
   * [Repository](https://github.com/guidance-ai/guidance)
 - ### [MemGPT](https://memgpt.ai/)
   * What is MemGPT?
-    - MemGPT is a memory manager for large language models.
+    - MemGPT is a memory manager for large language models that facilitates the ability to recall/remember information that well exceeds typical context length limits.
   * [Documentation](https://memgpt.readthedocs.io/en/latest/)
   * [Repository](https://github.com/cpacker/MemGPT)
   * [Discord](https://discord.gg/9GEQrxmVyE)
