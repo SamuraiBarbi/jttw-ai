@@ -3,8 +3,10 @@
 **Jesus Take the Wheel**, an A.I. assistant for people like me
 
 ## Required Reading
-  * ### Prompt Engineering ### - We'll need to get up to speed with best practices for writing prompts that produce the intended responses from large language models. The best resource for this is the [Awesome GPT Prompt Engineering](https://github.com/snwfdhmp/awesome-gpt-prompt-engineering) repo. Read it.
-  * ### Hardware Requirements ### - In order to run large language models locally host on our own machine/server we'll need to understand the hardware requirements, costs, and best available options in accordance to our budget. The best resource for this is Tim Dettmers comprehensive write up on [The Best GPUs for Deep Learning in 2023](https://github.com/snwfdhmp/awesome-gpt-prompt-engineering). Read it. If you can't be bother to read it then refer to his charts [Best GPUs by Relative Performance](https://i0.wp.com/timdettmers.com/wp-content/uploads/2023/01/GPUS_Ada_raw_performance3.png?ssl=1), [Best GPUs by Relative Performance Per Dollar](https://i0.wp.com/timdettmers.com/wp-content/uploads/2023/01/GPUs_Ada_performance_per_dollar6.png?ssl=1), and [GPU Recommendation Chart](https://i0.wp.com/timdettmers.com/wp-content/uploads/2023/01/gpu_recommendations.png?ssl=1)
+  * ### Prompt Engineering
+    We'll need to get up to speed with best practices for writing prompts that produce the intended responses from large language models. The best resource for this is the [Awesome GPT Prompt Engineering](https://github.com/snwfdhmp/awesome-gpt-prompt-engineering) repo. Read it.
+  * ### Hardware Requirements
+    In order to run large language models locally host on our own machine/server we'll need to understand the hardware requirements, costs, and best available options in accordance to our budget. The best resource for this is Tim Dettmers comprehensive write up on [The Best GPUs for Deep Learning in 2023](https://github.com/snwfdhmp/awesome-gpt-prompt-engineering). Read it. If you can't be bother to read it then refer to his charts [Best GPUs by Relative Performance](https://i0.wp.com/timdettmers.com/wp-content/uploads/2023/01/GPUS_Ada_raw_performance3.png?ssl=1), [Best GPUs by Relative Performance Per Dollar](https://i0.wp.com/timdettmers.com/wp-content/uploads/2023/01/GPUs_Ada_performance_per_dollar6.png?ssl=1), and [GPU Recommendation Chart](https://i0.wp.com/timdettmers.com/wp-content/uploads/2023/01/gpu_recommendations.png?ssl=1)
   
 ## Components
 - ### [Ollama](https://ollama.ai/)
