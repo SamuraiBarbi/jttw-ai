@@ -125,8 +125,9 @@ Before launching LiteLLM I'm going to make sure to kill any existing processes r
 lsof -ti :8000 | xargs -r kill
 ```
 ## Run LiteLLM
+We are adding the --debug --add_function_to_prompt and --drop_params arguments when executing litellm because MemGPT makes heavy use of function calling and params, which Ollama does not support and without these arguments LiteLLM will produce errors indicating that Ollama does not support the function and param calls MemGPT is sending.
 ```bash
-litellm --model ollama/openhermes2.5-mistral --api_base http://localhost:11434 --debug
+litellm --model ollama/openhermes2.5-mistral --api_base http://localhost:11434 --debug --add_function_to_prompt --drop_params
 ```
 ## Test LiteLLM
 Now that we have LiteLMM running and serving as an OpenAI proxy for the Ollama endpoint we need to test to make sure we're it's working properly.
