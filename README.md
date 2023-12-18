@@ -91,6 +91,7 @@ ollama serve
 ```
 ## Download Ollama Models
 We'll need to download the LLM now. There's various good models to choose from which are documented at https://ollama.ai/library. For the purposes of this project we'll be using a number of different models for different purposes
+
 Models Trained for Chatting/General Assistance
 ```bash
 ollama run openhermes2.5-mistral
