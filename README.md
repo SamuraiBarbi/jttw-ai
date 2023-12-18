@@ -92,7 +92,7 @@ ollama run phind-codellama
 ollama run starcoder
 ollama run wizardcoder
 ```
-Models Trains for SQL/Database Queries
+Models Trained for SQL/Database Queries
 ```bash
 ollama run sqlcoder
 ```
