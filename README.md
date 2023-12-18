@@ -27,10 +27,12 @@
   VRAM is a specific type of RAM used by GPUs to store graphical data, such as textures and frame buffers, for rendering images.
   * CUDA Cores
   CUDA Cores are processing units within a GPU that handle parallel computations, commonly used in deep learning tasks.
-  * Tensor Cores
-  Tensor Cores are specialized processing units in modern GPUs designed for accelerating matrix operations, particularly beneficial for deep learning workloads.
-  * OOM (Out of Memory) - OOM occurs when a program or process exhausts the available memory and is unable to allocate more, leading to system instability or termination.
-  * Quantize - Quantization is a technique in AI model optimization that involves reducing the precision of numerical values, often to lower bit-widths, to decrease memory and computation requirements.
+  * #### Tensor Cores
+    Tensor Cores are specialized processing units in modern GPUs designed for accelerating matrix operations, particularly beneficial for deep learning workloads.
+  * #### OOM (Out of Memory)
+    OOM occurs when a program or process exhausts the available memory and is unable to allocate more, leading to system instability or termination.
+  * #### Quantize
+    Quantization is a technique in AI model optimization that involves reducing the precision of numerical values, often to lower bit-widths, to decrease memory and computation requirements.
 ## Required Reading
   * ### Prompt Engineering
     We'll need to get up to speed with best practices for writing prompts that produce the intended responses from large language models ( LLM ). The best resource for this is the [Awesome GPT Prompt Engineering](https://github.com/snwfdhmp/awesome-gpt-prompt-engineering) repo. It's comprehensive collection of the best prompt engineering guides and information currated by the A.I. entheusiasts community. Read it.
