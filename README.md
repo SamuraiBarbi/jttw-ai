@@ -29,7 +29,7 @@
   * [Discord](https://discord.gg/9GEQrxmVyE)
 - ### [AutoGen](https://microsoft.github.io/autogen/)
   * What is AutoGen?
-    - Autogen is a multi-agent framework for directing multiple large language models to work together to complete tasks.
+    - Autogen is a multi-agent framework for directing multiple large language models to work together to complete tasks given to them as a group.
   * [Documentation](https://microsoft.github.io/autogen/docs/Getting-Started)
   * [Example 1](https://microsoft.github.io/autogen/docs/Examples)
   * [Repository](https://github.com/microsoft/autogen)
