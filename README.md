@@ -4,13 +4,29 @@
 
 ## Components
 - [Ollama](https://ollama.ai/)
-  * [Documentation](https://github.com/jmorganca/ollama/tree/main/docs)
-  * [Repository](https://github.com/jmorganca/ollama/tree/main)
   * What is Ollama?
     - Ollama is a local large language model server
+  * [Documentation](https://github.com/jmorganca/ollama/tree/main/docs)
+  * [Repository](https://github.com/jmorganca/ollama/tree/main)
+  * [Discord](https://discord.com/invite/ollama)
 - [LiteLLM](https://litellm.vercel.app/)
+  * What is LiteLLM?
+    - LiteLLM is an OpenAI proxy server
+  * [Documentation](https://docs.litellm.ai/docs/proxy/quick_start)
+  * [Repository](https://github.com/BerriAI/litellm/releases)
+  * [Discord](https://discord.com/invite/wuPM9dRgDw)
 - [Guidance]
-- [MemGPT]
+  * What is Guidance?
+    - Guidance is a large language model response formatter
+  * [Documentation]()
+  * [Repository](https://github.com/guidance-ai/guidance)
+  * [Discord]
+- [MemGPT](https://memgpt.ai/)
+  * What is MemGPT?
+    - MemGPT is a memory manager for large language models
+  * [Documentation](https://memgpt.readthedocs.io/en/latest/)
+  * [Repository](https://github.com/cpacker/MemGPT)
+  * [Discord](https://discord.gg/9GEQrxmVyE)
 - [AutoGen]
 - [Aider]
 - [Sweep]
