@@ -139,17 +139,12 @@ We're installing specifically the litellm 1.14.1 version of the litellm python p
 ```bash
 mkdir -p $HOME/LLM/jttw/guidance/guidance_venv
 cd $HOME/LLM/jttw/guidance/
-wget -P $HOME/LLM/jttw/guidance/ https://github.com/guidance-ai/guidance/archive/refs/heads/main.zip
-unzip $HOME/LLM/jttw/guidance/main.zip -d $HOME/LLM/jttw/guidance/
-rm $HOME/LLM/jttw/guidance/main.zip
-cp -r $HOME/LLM/jttw/guidance/guidance-main/. $HOME/LLM/jttw/guidance/
-rm -r $HOME/LLM/jttw/guidance/guidance-main
 
 python3 -m venv $HOME/LLM/jttw/guidance/guidance_venv
 source $HOME/LLM/jttw/guidance/guidance_venv/bin/activate
 python3 -m pip install --upgrade pip
 pip3 cache purge
-pip3 install -e .
+pip3 install guidance --upgrade
 pip3 install litellm==1.14.1
 ```
 ## Test Guidance
