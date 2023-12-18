@@ -54,12 +54,38 @@ ollama run wizard-math
 ```
 ## Test Ollama
 Now that we have Ollama running and serving at least one model we need to test to make sure we're it's working properly.
-To test we're going to send a curl request to the Ollama server making sure to one of the models we've downloaded in the "model": portion of the request. Since I've downloaded openhermes2.5-mistral that is what I'm going to specify in the "model": portion.
+To test - in a new tab we're going to send a curl request to the Ollama server making sure to use one of the models we've downloaded in the "model": portion of the request. Since I've downloaded openhermes2.5-mistral that is what I'm going to specify in the "model": portion. It may take a moment but we should see activity in the tab where Ollama is running.
 ```bash
 curl -X POST -H "Content-Type: application/json" -d '{"model": "openhermes2.5-mistral", "prompt": "Why is the sky blue?"}' http://localhost:11434/api/generate
 ```
 
 ## Install LiteLLM
+```bash
+mkdir -p $HOME/LLM/jttw/litellm/litellm_venv
+cd $HOME/LLM/jttw/litellm
+
+python3 -m venv $HOME/LLM/jttw/litellm/litellm_venv
+source $HOME/LLM/jttw/litellm/litellm_venv/bin/activate
+python3 -m pip install --upgrade pip
+pip3 cache purge
+pip3 install litellm --upgrade
+pip3 install async_generator
+  
+```
+Before launching LiteLLM I'm going to make sure to kill any existing processes running on port 8000 - the default port for LiteLLM. This is to ensure that LiteLLM launches with the expected port.
+```bash
+lsof -ti :8000 | xargs -r kill
+```
+## Run LiteLLM
+```bash
+litellm --model ollama/openhermes2.5-mistral --api_base http://localhost:11434 --debug
+```
+## Test LiteLLM
+Now that we have LiteLMM running and serving as an OpenAI proxy for Ollama we need to test to make sure we're it's working properly.
+To test - in a new tab we're going to send a curl request to the LiteLLM server making sure to use one of the models we've downloaded in the "model": portion of the request. Since I've downloaded openhermes2.5-mistral that is what I'm going to specify in the "model": portion. It may take a moment but we should see activity in the tab where Ollama is running as well as tab where LiteLLM is running.
+```bash
+curl --location 'http://0.0.0.0:8000/chat/completions' --header 'Content-Type: application/json' --data '{"model": "ollama/openhermes2.5-mistral", "messages": [{"role": "user", "content": "why is the sky blue?"}]}'
+```
 
 
 ## Install MemGPT
