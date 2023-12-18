@@ -156,18 +156,18 @@ Now that we have Guidance in place we need to test to make sure it's working pro
 ```python
 from guidance import models, gen, select, user, assistant
 
-query = """
+prompt = """
 why is the sky blue?
 """
 
-modelEndPoint = models.LiteLLMCompletion(
+model_endpoint = models.LiteLLMCompletion(
     "ollama/openhermes2.5-mistral",
     temperature=0.8, 
     api_base="http://0.0.0.0:8000"
 )
 
-lm = modelEndPoint
-lm += query
+lm = model_endpoint
+lm += prompt
 lm += gen()
 
 print(str(lm))
