@@ -171,7 +171,7 @@ We are adding the --debug argument so that we can we detailed info about request
 litellm --model ollama/openhermes2.5-mistral --api_base http://localhost:11434 --debug --add_function_to_prompt --drop_params
 ```
 ## Test LiteLLM
-Now that we have LiteLMM running and serving as an OpenAI proxy for the Ollama endpoint we need to test to make sure we're it's working properly.
+Now that we have LiteLLM running and serving as an OpenAI proxy for the Ollama endpoint we need to test to make sure we're it's working properly.
 To test - in a new tab we're going to send a curl request to the LiteLLM server making sure to use one of the models we've downloaded in the "model": portion of the request. Since I've downloaded openhermes2.5-mistral that is what I'm going to specify in the "model": portion. It may take a moment but we should see activity in the tab where Ollama is running as well as tab where LiteLLM is running.
 ```bash
 curl --location 'http://0.0.0.0:8000/chat/completions' --header 'Content-Type: application/json' --data '{"model": "ollama/openhermes2.5-mistral", "messages": [{"role": "user", "content": "why is the sky blue?"}]}'
