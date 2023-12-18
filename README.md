@@ -21,26 +21,26 @@
   * [Documentation](https://github.com/guidance-ai/guidance#example-notebooks)
   * [Example 1](https://betterprogramming.pub/a-deep-dive-into-guidances-source-code-16681a76fb20), [Example 2](https://medium.com/@akshayshinde/taking-control-of-language-models-with-microsofts-guidance-library-e711cd81654b), [Example 3](https://betterprogramming.pub/a-simple-agent-with-guidance-and-local-llm-c0865c97eaa9), [Example 4](https://www.theregister.com/2023/05/18/microsoft_guidance_project/)
   * [Repository](https://github.com/guidance-ai/guidance)
-- [MemGPT](https://memgpt.ai/)
+- ### [MemGPT](https://memgpt.ai/)
   * What is MemGPT?
     - MemGPT is a memory manager for large language models.
   * [Documentation](https://memgpt.readthedocs.io/en/latest/)
   * [Repository](https://github.com/cpacker/MemGPT)
   * [Discord](https://discord.gg/9GEQrxmVyE)
-- [AutoGen](https://microsoft.github.io/autogen/)
+- ### [AutoGen](https://microsoft.github.io/autogen/)
   * What is AutoGen?
     - Autogen is a multi-agent framework for directing multiple large language models to work together to complete tasks.
   * [Documentation](https://microsoft.github.io/autogen/docs/Getting-Started)
   * [Example 1](https://microsoft.github.io/autogen/docs/Examples)
   * [Repository](https://github.com/microsoft/autogen)
   * [Discord](https://discord.gg/pAbnFJrkgZ)
-- [Aider](https://aider.chat/)
+- ### [Aider](https://aider.chat/)
   * What is Aider?
     - Aider is command line tool for instructing large language models to create, update, revise, improve, and document/comment code for local git repositories
   * [Documentation](https://aider.chat/examples/)
   * [Respository](https://github.com/paul-gauthier/aider)
-- [Sweep]
-- [PromptFoo](https://www.promptfoo.dev/)
+- ### [Sweep]
+- ### [PromptFoo](https://www.promptfoo.dev/)
   * What is PromptFoo?
     - PromptFoo is a unit testing and evaluation tool for prompts.
   * [Documentation](https://www.promptfoo.dev/docs/intro/)
