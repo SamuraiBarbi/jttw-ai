@@ -245,4 +245,13 @@ cd $HOME/LLM/jttw/autogen/
 source $HOME/LLM/jttw/autogen/autogen_venv/bin/activate
 python3 autogen_litellm_test.py
 ```
+Preparing JTTW
+```bash
+mkdir -p $HOME/LLM/jttw/jttw_venv
+python3 -m venv $HOME/LLM/jttw/jttw_venv
+source $HOME/LLM/jttw/jttw_venv/bin/activate
+pip3 install guidance
+pip3 install pyautogen
+pip3 install pymemgpt
+```
 
