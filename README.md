@@ -228,7 +228,7 @@ memgpt configure
 ## Test MemGPT
 Now that we have MemGPT running and sending requests to the LiteLLM endpoint we need to test to make sure it's working properly. We'll go through and have a conversation with the MemGPT agent.
 ```bash
-memgpt run --model dolphin2.2-mistral:7b-q6_K --model-endpoint http://0.0.0.0:8000 --debug
+memgpt run --model openhermes2.5-mistral --model-endpoint http://0.0.0.0:8000 --debug
 ```
 
 ## Install AutoGen
