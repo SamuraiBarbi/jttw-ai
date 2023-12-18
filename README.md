@@ -108,6 +108,7 @@ curl -X POST -H "Content-Type: application/json" -d '{"model": "openhermes2.5-mi
 ```
 
 ## Install LiteLLM
+We're installing specifically the litellm 1.14.1 version of the litellm python package because latest verion 1.15.1 introduced a [bug that broke Ollama requests](https://github.com/BerriAI/litellm/issues/1156). The fix should be out soon in the next release through.
 ```bash
 mkdir -p $HOME/LLM/jttw/litellm/litellm_venv
 cd $HOME/LLM/jttw/litellm
@@ -116,7 +117,7 @@ python3 -m venv $HOME/LLM/jttw/litellm/litellm_venv
 source $HOME/LLM/jttw/litellm/litellm_venv/bin/activate
 python3 -m pip install --upgrade pip
 pip3 cache purge
-pip3 install litellm --upgrade
+pip3 install litellm==1.14.1
 pip3 install async_generator
   
 ```
@@ -136,7 +137,6 @@ To test - in a new tab we're going to send a curl request to the LiteLLM server 
 curl --location 'http://0.0.0.0:8000/chat/completions' --header 'Content-Type: application/json' --data '{"model": "ollama/openhermes2.5-mistral", "messages": [{"role": "user", "content": "why is the sky blue?"}]}'
 ```
 ## Install Guidance
-We're installing specifically the litellm 1.14.1 version of the litellm python package because latest verion 1.15.1 introduced a [bug that broke Ollama requests](https://github.com/BerriAI/litellm/issues/1156). The fix should be out soon in the next release through.
 ```bash
 mkdir -p $HOME/LLM/jttw/guidance/guidance_venv
 cd $HOME/LLM/jttw/guidance/
