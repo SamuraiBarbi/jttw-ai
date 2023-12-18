@@ -2,7 +2,7 @@
 
 **Jesus Take the Wheel**, an A.I. assistant for people like me
 
-## Terms To Know
+## Terms We Need To Know
 | Term                             | Definition                                                                                                                                         |
 |----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Prompt**                       | A prompt is a user-provided input or instruction given to an AI system to generate a specific response or perform a task.                           |
