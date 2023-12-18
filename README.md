@@ -253,7 +253,7 @@ memgpt configure
 ```
 
 ## Test MemGPT
-Now that we have MemGPT running and sending requests to the LiteLLM endpoint we need to test to make sure it's working properly. We'll go through and have a conversation with the MemGPT agent being served from MemGPT through LiteLLM to Ollama
+Now that we have MemGPT running and sending requests to the LiteLLM endpoint we need to test to make sure it's working properly. We'll go through and have a conversation with a MemGPT LLM agent being served from MemGPT through LiteLLM to Ollama
 ```bash
 memgpt run --model openhermes2.5-mistral --model-endpoint http://0.0.0.0:8000 --debug
 ```
@@ -313,7 +313,7 @@ assistant.initiate_chat(
     message = "How can I help you today?"
 )
 ```
-Next we'll enter our python environment for AutoGen and run the python test script. If everything is working properly we should be having a conversation with our LLM being served from Autogen through LiteLLM to Ollama.
+Next we'll enter our python environment for AutoGen and run the python test script. If everything is working properly we should be having a conversation with a Autogen LLM agent being served from Autogen through LiteLLM to Ollama.
 ```bash
 cd $HOME/LLM/jttw/autogen/
 source $HOME/LLM/jttw/autogen/autogen_venv/bin/activate
