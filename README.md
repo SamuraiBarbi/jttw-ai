@@ -275,6 +275,7 @@ cd $HOME/LLM/jttw/
 python3 -m venv $HOME/LLM/jttw/jttw_venv
 source $HOME/LLM/jttw/jttw_venv/bin/activate
 pip3 install guidance
+pip3 install litellm==1.14.1
 pip3 install pyautogen
 pip3 install pymemgpt
 ```
