@@ -152,7 +152,32 @@ pip3 install -e .
 pip3 install litellm -U
 ```
 ## Test Guidance
+Now that we have Guidance in place we need to test to make sure it's working properly. We'll create a python script in our $HOME/LLM/jttw/guidance/ directory named guidance_litellm_test.py.
+```python
+from guidance import models, gen, select, user, assistant
 
+query = """
+why is the sky blue?
+"""
+
+modelEndPoint = models.LiteLLMCompletion(
+    "ollama/openhermes2.5-mistral",
+    temperature=0.8, 
+    api_base="http://0.0.0.0:8000"
+)
+
+lm = modelEndPoint
+lm += query
+lm += gen()
+
+print(str(lm))
+```
+Next we'll enter our python environment for Guidance and run the python test script. If everything is working properly we should be having output from our LLM being served from Guidance through LiteLLM to Ollama.
+```bash
+cd $HOME/LLM/jttw/guidance/
+source $HOME/LLM/jttw/guidance/guidance_venv/bin/activate
+python3 guidance_litellm_test.py
+```
 
 ## Install MemGPT
 ```bash
