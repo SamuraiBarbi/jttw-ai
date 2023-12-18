@@ -62,7 +62,7 @@
 
 
 ## Install Ollama
-While you can run Ollama as a docker I've found that the Ollama docker version does not work with LiteLLM since LiteLLM automatically serves Ollama rather than presenting Ollama. After determining this incompatiblity was an issue between the docker version of Ollama and LiteLLM I decided to use the sh install method for Ollama instead.
+While you can run Ollama as a docker I've found that the Ollama docker version does not work with LiteLLM since LiteLLM automatically serves Ollama rather than presenting Ollama. After determining this incompatiblity was an issue between the docker version of Ollama and LiteLLM I decided to use the sh install method for Ollama instead. Your mileage may vary if you instead decide to use the Ollama docker version as well as [the Ollama compatible LiteLLM docker](https://litellm.vercel.app/docs/providers/ollama#quick-start).
 ```bash
 curl https://ollama.ai/install.sh | sh
 ```
