@@ -135,6 +135,7 @@ To test - in a new tab we're going to send a curl request to the LiteLLM server 
 curl --location 'http://0.0.0.0:8000/chat/completions' --header 'Content-Type: application/json' --data '{"model": "ollama/openhermes2.5-mistral", "messages": [{"role": "user", "content": "why is the sky blue?"}]}'
 ```
 ## Install Guidance
+We're installing specifically the litellm 1.14.1 version of the litellm python package because latest introduced a [bug that broke Ollama requests](https://github.com/BerriAI/litellm/issues/1156). The fix should be out soon in the next release through.
 ```bash
 mkdir -p $HOME/LLM/jttw/guidance/guidance_venv
 cd $HOME/LLM/jttw/guidance/
@@ -149,7 +150,7 @@ source $HOME/LLM/jttw/guidance/guidance_venv/bin/activate
 python3 -m pip install --upgrade pip
 pip3 cache purge
 pip3 install -e .
-pip3 install litellm -U
+pip3 install litellm==1.14.1
 ```
 ## Test Guidance
 Now that we have Guidance in place we need to test to make sure it's working properly. We'll create a python script in our $HOME/LLM/jttw/guidance/ directory named guidance_litellm_test.py.
