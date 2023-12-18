@@ -133,9 +133,11 @@ curl -X POST -H "Content-Type: application/json" -d '{"model": "openhermes2.5-mi
 ## Install LiteLLM
 We're installing specifically the litellm 1.14.1 version of the litellm python package because latest verion 1.15.1 introduced a [bug that broke Ollama requests](https://github.com/BerriAI/litellm/issues/1156). The fix should be out soon in the next release through.
 ```bash
+# Create our the directory for our LiteLLM python environment
 mkdir -p $HOME/LLM/jttw/litellm/litellm_venv
 cd $HOME/LLM/jttw/litellm
 
+# Create our LiteLLM python environment, activate into it, install/update pip, clear python package cache, install LiteLLM python package and the required Async Generator python package 
 python3 -m venv $HOME/LLM/jttw/litellm/litellm_venv
 source $HOME/LLM/jttw/litellm/litellm_venv/bin/activate
 python3 -m pip install --upgrade pip
@@ -161,9 +163,11 @@ curl --location 'http://0.0.0.0:8000/chat/completions' --header 'Content-Type: a
 ```
 ## Install Guidance
 ```bash
+# Create our the directory for our Guidance python environment
 mkdir -p $HOME/LLM/jttw/guidance/guidance_venv
 cd $HOME/LLM/jttw/guidance/
 
+# Create our Guidance python environment, activate into it, install/update pip, clear python package cache, and install Guidance python package and the required LiteLLM python package
 python3 -m venv $HOME/LLM/jttw/guidance/guidance_venv
 source $HOME/LLM/jttw/guidance/guidance_venv/bin/activate
 python3 -m pip install --upgrade pip
@@ -201,14 +205,17 @@ python3 guidance_litellm_test.py
 
 ## Install MemGPT
 ```bash
+# Create our the directory for our MemGPT python environment
 mkdir -p $HOME/LLM/jttw/memgpt/memgpt_venv
 cd $HOME/LLM/jttw/memgpt/
+
 wget -P $HOME/LLM/jttw/memgpt/ https://github.com/cpacker/MemGPT/archive/refs/heads/master.zip
 unzip $HOME/LLM/jttw/memgpt/master.zip -d $HOME/LLM/jttw/memgpt/
 rm $HOME/LLM/jttw/memgpt/master.zip
 cp -r $HOME/LLM/jttw/memgpt/MemGPT-main/. $HOME/LLM/jttw/memgpt/
 rm -r $HOME/LLM/jttw/memgpt/MemGPT-main
 
+# Create our MemGPT python environment, activate into it, install/update pip, clear python package cache, and install MemGPT python package and the required Transformers and PyTorch python packages
 python3 -m venv $HOME/LLM/jttw/memgpt/memgpt_venv
 source $HOME/LLM/jttw/memgpt/memgpt_venv/bin/activate
 python3 -m pip install --upgrade pip
@@ -240,14 +247,17 @@ memgpt run --model openhermes2.5-mistral --model-endpoint http://0.0.0.0:8000 --
 
 ## Install AutoGen
 ```bash
+# Create our the directory for our AutoGen python environment
 mkdir -p $HOME/LLM/jttw/autogen/autogen_venv
 cd $HOME/LLM/jttw/autogen/
+
 wget -P $HOME/LLM/jttw/autogen/ https://github.com/microsoft/autogen/archive/refs/heads/master.zip
 unzip $HOME/LLM/jttw/autogen/master.zip -d $HOME/LLM/jttw/autogen/
 rm $HOME/LLM/jttw/autogen/master.zip
 cp -r $HOME/LLM/jttw/autogen/autogen-main/. $HOME/LLM/jttw/autogen/
 rm -r $HOME/LLM/jttw/autogen/autogen-main
 
+# Create our AutoGen python environment, activate into it, install/update pip, clear python package cache, and install AutoGen python package
 python3 -m venv $HOME/LLM/jttw/autogen/autogen_venv
 source $HOME/LLM/jttw/autogen/autogen_venv/bin/activate
 python3 -m pip install --upgrade pip
