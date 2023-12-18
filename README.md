@@ -17,7 +17,7 @@
 |----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Model**                        | A model is a mathematical representation or framework that an AI system uses to learn patterns from data and make predictions or generate responses.  |
 | **LLM (Language Model)**         | A Language Model (LLM) is a type of AI model specifically designed for understanding and generating human language.                                   |
-| **Quantize**                     | Quantization is a technique in AI model optimization that involves reducing the precision of numerical values, often to lower bit-widths, to decrease memory and computation requirements. |
+| **Quantize**                     | Quantization is a technique in AI model optimization that involves reducing the precision of numerical values, often to lower bit-widths, to decrease memory and computation requirements - effectively compressing the models file size down|
 ### Usage Related Terms
 | Term                             | Definition                                                                                                                                         |
 |----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
