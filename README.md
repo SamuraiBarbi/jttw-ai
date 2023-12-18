@@ -137,11 +137,13 @@ We're installing specifically the litellm 1.14.1 version of the litellm python p
 mkdir -p $HOME/LLM/jttw/litellm/litellm_venv
 cd $HOME/LLM/jttw/litellm
 
-# Create our LiteLLM python environment, activate into it, install/update pip, clear python package cache, install LiteLLM python package and the required Async Generator python package 
+# Create our LiteLLM python environment
 python3 -m venv $HOME/LLM/jttw/litellm/litellm_venv
+# Activate into it, install/update pip, and clear python package cache
 source $HOME/LLM/jttw/litellm/litellm_venv/bin/activate
 python3 -m pip install --upgrade pip
 pip3 cache purge
+# Install LiteLLM python package and the required Async Generator python package
 pip3 install litellm==1.14.1
 pip3 install async_generator
   
@@ -167,11 +169,13 @@ curl --location 'http://0.0.0.0:8000/chat/completions' --header 'Content-Type: a
 mkdir -p $HOME/LLM/jttw/guidance/guidance_venv
 cd $HOME/LLM/jttw/guidance/
 
-# Create our Guidance python environment, activate into it, install/update pip, clear python package cache, and install Guidance python package and the required LiteLLM python package
+# Create our Guidance python environment
 python3 -m venv $HOME/LLM/jttw/guidance/guidance_venv
+# Activate into it, install/update pip, clear python package cache
 source $HOME/LLM/jttw/guidance/guidance_venv/bin/activate
 python3 -m pip install --upgrade pip
 pip3 cache purge
+# Install Guidance python package and the required LiteLLM python package
 pip3 install guidance --upgrade
 pip3 install litellm==1.14.1
 ```
@@ -215,11 +219,13 @@ rm $HOME/LLM/jttw/memgpt/master.zip
 cp -r $HOME/LLM/jttw/memgpt/MemGPT-main/. $HOME/LLM/jttw/memgpt/
 rm -r $HOME/LLM/jttw/memgpt/MemGPT-main
 
-# Create our MemGPT python environment, activate into it, install/update pip, clear python package cache, and install MemGPT python package and the required Transformers and PyTorch python packages
+# Create our MemGPT python environment
 python3 -m venv $HOME/LLM/jttw/memgpt/memgpt_venv
+# Activate into it, install/update pip, clear python package cache
 source $HOME/LLM/jttw/memgpt/memgpt_venv/bin/activate
 python3 -m pip install --upgrade pip
 pip3 cache purge
+# Install MemGPT python package and the required Transformers and PyTorch python packages
 pip3 install -e .
 pip3 install transformers
 pip3 install torch
@@ -257,11 +263,13 @@ rm $HOME/LLM/jttw/autogen/master.zip
 cp -r $HOME/LLM/jttw/autogen/autogen-main/. $HOME/LLM/jttw/autogen/
 rm -r $HOME/LLM/jttw/autogen/autogen-main
 
-# Create our AutoGen python environment, activate into it, install/update pip, clear python package cache, and install AutoGen python package
+# Create our AutoGen python environment
 python3 -m venv $HOME/LLM/jttw/autogen/autogen_venv
+# Activate into it, install/update pip, clear python package cache
 source $HOME/LLM/jttw/autogen/autogen_venv/bin/activate
 python3 -m pip install --upgrade pip
 pip3 cache purge
+# Install AutoGen python package
 pip3 install pyautogen --upgrade
 ```
 ## Test AutoGen
