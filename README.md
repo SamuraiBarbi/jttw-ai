@@ -15,12 +15,12 @@
   * [Documentation](https://docs.litellm.ai/docs/proxy/quick_start)
   * [Repository](https://github.com/BerriAI/litellm/releases)
   * [Discord](https://discord.com/invite/wuPM9dRgDw)
-- [Guidance]
+- [Guidance](https://github.com/guidance-ai/guidance)
   * What is Guidance?
-    - Guidance is a large language model response formatter
-  * [Documentation]()
-  * [Repository](https://github.com/guidance-ai/guidance)
-  * [Discord]
+    - Guidance is a large language model prompt templating language to enforce consistant and predictable formatted responses
+  * [Documentation](https://github.com/guidance-ai/guidance#example-notebooks)
+  * [Example 1](https://betterprogramming.pub/a-deep-dive-into-guidances-source-code-16681a76fb20), [Example 2](https://medium.com/@akshayshinde/taking-control-of-language-models-with-microsofts-guidance-library-e711cd81654b), [Example 3](https://betterprogramming.pub/a-simple-agent-with-guidance-and-local-llm-c0865c97eaa9)
+  * [Repository](https://github.com/guidance-ai/guidance), [Example 4](https://www.theregister.com/2023/05/18/microsoft_guidance_project/)
 - [MemGPT](https://memgpt.ai/)
   * What is MemGPT?
     - MemGPT is a memory manager for large language models
