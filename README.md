@@ -4,13 +4,17 @@
 
 ## Components
 - [Ollama](https://ollama.ai/)
-- LiteLLM
-- Guidance
-- MemGPT
-- AutoGen
-- Aider
-- Sweep
-- PromptFoo
+  * [Documentation](https://github.com/jmorganca/ollama/tree/main/docs)
+  * [Repository](https://github.com/jmorganca/ollama/tree/main)
+  * What is Ollama?
+    - Ollama is a local large language model server
+- [LiteLLM](https://litellm.vercel.app/)
+- [Guidance]
+- [MemGPT]
+- [AutoGen]
+- [Aider]
+- [Sweep]
+- [PromptFoo]
 
 
 ## Install Ollama
