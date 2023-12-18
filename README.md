@@ -234,7 +234,7 @@ pip3 install pyautogen --upgrade
 ## Test AutoGen
 Now that we have AutoGen in place we need to test to make sure it's working properly. We'll create a python script in our $HOME/LLM/jttw/autogen/ directory named autogen_litellm_test.py.
 ```python
-from autogen import UserProxyAgent, ConversableAgent, config_list_from_json
+from autogen import UserProxyAgent, ConversableAgent
 
 def main():
     # Load LLM inference endpoints from an env variable or a file
