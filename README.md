@@ -2,13 +2,22 @@
 
 **Jesus Take the Wheel**, an A.I. assistant for people like me
 
+## Terms To Know
+  * Prompt
+  * Model
+  * LLM
+  * Tokens
+  * VRAM
+  * OOM
+  * Quantize
 ## Required Reading
   * ### Prompt Engineering
-    We'll need to get up to speed with best practices for writing prompts that produce the intended responses from large language models. The best resource for this is the [Awesome GPT Prompt Engineering](https://github.com/snwfdhmp/awesome-gpt-prompt-engineering) repo. It's comprehensive collection of the best prompt engineering guides and information currated by the A.I. entheusiasts community. Read it.
+    We'll need to get up to speed with best practices for writing prompts that produce the intended responses from large language models ( LLM ). The best resource for this is the [Awesome GPT Prompt Engineering](https://github.com/snwfdhmp/awesome-gpt-prompt-engineering) repo. It's comprehensive collection of the best prompt engineering guides and information currated by the A.I. entheusiasts community. Read it.
   * ### Hardware Requirements
-    In order to run large language models locally hosted on our own machine/server we'll need to understand the hardware requirements, costs, and best available hardware options in accordance to our budget. The best resource for this is Tim Dettmers' comprehensive write up on [The Best GPUs for Deep Learning in 2023](https://github.com/snwfdhmp/awesome-gpt-prompt-engineering). Read it. If you can't be bothered to read it then refer to his charts [Best GPUs by Relative Performance](https://i0.wp.com/timdettmers.com/wp-content/uploads/2023/01/GPUS_Ada_raw_performance3.png?ssl=1), [Best GPUs by Relative Performance Per Dollar](https://i0.wp.com/timdettmers.com/wp-content/uploads/2023/01/GPUs_Ada_performance_per_dollar6.png?ssl=1), and [GPU Recommendation Chart](https://i0.wp.com/timdettmers.com/wp-content/uploads/2023/01/gpu_recommendations.png?ssl=1).
+    In order to run LLM locally hosted on our own machine/server we'll need to understand the hardware requirements, costs, and best available hardware options in accordance to our budget. The best resource for this is Tim Dettmers' comprehensive write up on [The Best GPUs for Deep Learning in 2023](https://github.com/snwfdhmp/awesome-gpt-prompt-engineering). Read it. If you can't be bothered to read it then refer to his charts [Best GPUs by Relative Performance](https://i0.wp.com/timdettmers.com/wp-content/uploads/2023/01/GPUS_Ada_raw_performance3.png?ssl=1), [Best GPUs by Relative Performance Per Dollar](https://i0.wp.com/timdettmers.com/wp-content/uploads/2023/01/GPUs_Ada_performance_per_dollar6.png?ssl=1), and [GPU Recommendation Chart](https://i0.wp.com/timdettmers.com/wp-content/uploads/2023/01/gpu_recommendations.png?ssl=1).
 
-    Tim's post specifically covers loading large language models into GPU memory ( VRAM ). He does not get into loading large language models into shared memory like MacBook Pros. Generally as of the time of me writing this the only methods of loading large language models and having fast responses are using GPU or MacBook. While we can load large language models with system memory ( RAM ) and run them on the systems CPU, it will be incredibly slow compared to the other two methods. 
+    Tim's post specifically covers loading LLM into GPU memory ( VRAM ). He does not get into loading LLM into shared memory like MacBook Pros. Generally as of the time of me writing this the only methods of loading LLM and having fast responses are using GPU or certain models of MacBook that have large amounts of memory. While we can load LLM with system memory ( RAM ) and run them on the systems CPU, it will be incredibly slow compared to the other two methods.
+    
   
 ## Components
 - ### [Ollama](https://ollama.ai/)
@@ -34,14 +43,14 @@
   * [Repository](https://github.com/guidance-ai/guidance)
 - ### [MemGPT](https://memgpt.ai/)
   * What is MemGPT?
-    - MemGPT is a memory manager for large language models that facilitates the ability to recall/remember information that well exceeds typical context length limits.
+    - MemGPT is a memory manager for LLM that facilitates the ability to recall/remember information that well exceeds typical context length limits.
   * [Installation](#install-memgpt)
   * [Documentation](https://memgpt.readthedocs.io/en/latest/)
   * [Repository](https://github.com/cpacker/MemGPT)
   * [Discord](https://discord.gg/9GEQrxmVyE)
 - ### [AutoGen](https://microsoft.github.io/autogen/)
   * What is AutoGen?
-    - Autogen is a multi-agent framework for directing multiple large language models to work together to complete tasks given to them as a group.
+    - Autogen is a multi-agent framework for directing multiple LLM to work together to complete tasks given to them as a group.
   * [Installation](#install-autogen)
   * [Documentation](https://microsoft.github.io/autogen/docs/Getting-Started)
   * [Example 1](https://microsoft.github.io/autogen/docs/Examples)
@@ -49,7 +58,7 @@
   * [Discord](https://discord.gg/pAbnFJrkgZ)
 - ### [Aider](https://aider.chat/)
   * What is Aider?
-    - Aider is command line tool for instructing large language models to create, update, revise, improve, and document/comment code for local git repositories
+    - Aider is command line tool for instructing LLM to create, update, revise, improve, and document/comment code for local git repositories
   * [Installation](#install-aider)
   * [Documentation](https://aider.chat/examples/)
   * [Respository](https://github.com/paul-gauthier/aider)
@@ -77,7 +86,7 @@ lsof -ti :11434 | xargs -r kill
 ollama serve
 ```
 ## Download Ollama Models
-We'll need to download the large language models now. There's various good models to choose from which are documented at https://ollama.ai/library. For the purposes of this project we'll be using a number of different models for different purposes
+We'll need to download the LLM now. There's various good models to choose from which are documented at https://ollama.ai/library. For the purposes of this project we'll be using a number of different models for different purposes
 Models Trained for Chatting/General Assistance
 ```bash
 ollama run openhermes2.5-mistral
