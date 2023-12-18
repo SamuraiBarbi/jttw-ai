@@ -148,8 +148,8 @@ python3 -m venv $HOME/LLM/jttw/guidance/guidance_venv
 source $HOME/LLM/jttw/guidance/guidance_venv/bin/activate
 python3 -m pip install --upgrade pip
 pip3 cache purge
-pip3 install guidance --upgrade
-pip3 install requests
+pip3 install -e .
+pip3 install litellm -U
 ```
 ## Test Guidance
 
