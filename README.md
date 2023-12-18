@@ -81,7 +81,7 @@ lsof -ti :8000 | xargs -r kill
 litellm --model ollama/openhermes2.5-mistral --api_base http://localhost:11434 --debug
 ```
 ## Test LiteLLM
-Now that we have LiteLMM running and serving as an OpenAI proxy for Ollama we need to test to make sure we're it's working properly.
+Now that we have LiteLMM running and serving as an OpenAI proxy for the Ollama endpoint we need to test to make sure we're it's working properly.
 To test - in a new tab we're going to send a curl request to the LiteLLM server making sure to use one of the models we've downloaded in the "model": portion of the request. Since I've downloaded openhermes2.5-mistral that is what I'm going to specify in the "model": portion. It may take a moment but we should see activity in the tab where Ollama is running as well as tab where LiteLLM is running.
 ```bash
 curl --location 'http://0.0.0.0:8000/chat/completions' --header 'Content-Type: application/json' --data '{"model": "ollama/openhermes2.5-mistral", "messages": [{"role": "user", "content": "why is the sky blue?"}]}'
@@ -122,6 +122,7 @@ memgpt configure
 ```
 
 ## Test MemGPT
+Now that we have MemGPT running and sending requests to the LiteLLM endpoint we need to test to make sure we're it's working properly. We'll go through and have a conversation with the MemGPT agent.
 ```bash
 memgpt run --model dolphin2.2-mistral:7b-q6_K --model-endpoint http://0.0.0.0:8000 --debug
 ```
