@@ -48,7 +48,7 @@
 - ### [Sweep]
 - ### [PromptFoo](https://www.promptfoo.dev/)
   * What is PromptFoo?
-    - PromptFoo is a unit testing and evaluation tool for prompts.
+    - PromptFoo is a unit testing and evaluation tool for prompts allowing for a better understand and insight into prompts that consistantly behave as expected, and those that need refactored.
   * [Documentation](https://www.promptfoo.dev/docs/intro/)
   * [Repository](https://github.com/promptfoo/promptfoo)
   * [Discord](https://discord.gg/gHPS9jjfbs)
