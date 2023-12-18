@@ -3,19 +3,19 @@
 **Jesus Take the Wheel**, an A.I. assistant for people like me
 
 ## Components
-- [Ollama](https://ollama.ai/)
+- ### [Ollama](https://ollama.ai/)
   * What is Ollama?
     - Ollama is a local large language model server.
   * [Documentation](https://github.com/jmorganca/ollama/tree/main/docs)
   * [Repository](https://github.com/jmorganca/ollama/tree/main)
   * [Discord](https://discord.com/invite/ollama)
-- [LiteLLM](https://litellm.vercel.app/)
+- ### [LiteLLM](https://litellm.vercel.app/)
   * What is LiteLLM?
     - LiteLLM is an OpenAI proxy server.
   * [Documentation](https://docs.litellm.ai/docs/proxy/quick_start)
   * [Repository](https://github.com/BerriAI/litellm/releases)
   * [Discord](https://discord.com/invite/wuPM9dRgDw)
-- [Guidance](https://github.com/guidance-ai/guidance)
+- ### [Guidance](https://github.com/guidance-ai/guidance)
   * What is Guidance?
     - Guidance is a large language model prompt templating language to enforce consistant and predictable formatted responses.
   * [Documentation](https://github.com/guidance-ai/guidance#example-notebooks)
