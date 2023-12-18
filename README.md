@@ -121,6 +121,23 @@ To test - in a new tab we're going to send a curl request to the LiteLLM server 
 ```bash
 curl --location 'http://0.0.0.0:8000/chat/completions' --header 'Content-Type: application/json' --data '{"model": "ollama/openhermes2.5-mistral", "messages": [{"role": "user", "content": "why is the sky blue?"}]}'
 ```
+## Install Guidance
+```bash
+mkdir -p $HOME/LLM/jttw/guidance/guidance_venv
+cd $HOME/LLM/jttw/guidance/
+wget -P $HOME/LLM/jttw/guidance/ https://github.com/guidance-ai/guidance/archive/refs/heads/main.zip
+unzip $HOME/LLM/jttw/guidance/main.zip -d $HOME/LLM/jttw/guidance/
+rm $HOME/LLM/jttw/guidance/main.zip
+cp -r $HOME/LLM/jttw/guidance/guidance-main/. $HOME/LLM/jttw/guidance/
+rm -r $HOME/LLM/jttw/guidance/guidance-main
+
+python3 -m venv $HOME/LLM/jttw/guidance/guidance_venv
+source $HOME/LLM/jttw/guidance/guidance_venv/bin/activate
+python3 -m pip install --upgrade pip
+pip3 cache purge
+pip3 install guidance --upgrade
+```
+## Test Guidance
 
 
 ## Install MemGPT
@@ -176,7 +193,7 @@ python3 -m venv $HOME/LLM/jttw/autogen/autogen_venv
 source $HOME/LLM/jttw/autogen/autogen_venv/bin/activate
 python3 -m pip install --upgrade pip
 pip3 cache purge
-pip3 install pyautogen
+pip3 install pyautogen --upgrade
 ```
 ## Test AutoGen
 Now that we have AutoGen in place we need to test to make sure it's working properly. We'll create a python script in our $HOME/LLM/jttw/autogen/ directory named autogen_litellm_test.py.
