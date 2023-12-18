@@ -165,7 +165,7 @@ pip3 install guidance --upgrade
 pip3 install litellm==1.14.1
 ```
 ## Test Guidance
-Now that we have Guidance in place we need to test to make sure it's working properly. We'll create a python script in our $HOME/LLM/jttw/guidance/ directory named guidance_litellm_test.py. Fun fact, the LiteLLM model is not called in Guidance like other models traditionally would be - example models.OpenAI, but rather by one of three methods as detailed in the [Guidance _lite_llm.py class in their repo](https://github.com/guidance-ai/guidance/blob/main/guidance/models/_lite_llm.py) - LiteLLMChat, LiteLLMInstruct, or LiteLLMCompletion. For this test we're going to use LiteLLMCompletion.
+Now that we have Guidance in place we need to test to make sure it's working properly. We'll create a python script in our $HOME/LLM/jttw/guidance/ directory and name the file guidance_litellm_test.py. Fun fact, the LiteLLM model is not called in Guidance like other models traditionally would be - example models.OpenAI, but rather by one of three methods as detailed in the [Guidance _lite_llm.py class in their repo](https://github.com/guidance-ai/guidance/blob/main/guidance/models/_lite_llm.py) - LiteLLMChat, LiteLLMInstruct, or LiteLLMCompletion. For this test we're going to use LiteLLMCompletion.
 ```python
 from guidance import models, gen
 
@@ -248,7 +248,7 @@ pip3 cache purge
 pip3 install pyautogen --upgrade
 ```
 ## Test AutoGen
-Now that we have AutoGen in place we need to test to make sure it's working properly. We'll create a python script in our $HOME/LLM/jttw/autogen/ directory named autogen_litellm_test.py.
+Now that we have AutoGen in place we need to test to make sure it's working properly. We'll create a python script in our $HOME/LLM/jttw/autogen/ directory and name the file autogen_litellm_test.py.
 ```python
 from autogen import UserProxyAgent, ConversableAgent
 
