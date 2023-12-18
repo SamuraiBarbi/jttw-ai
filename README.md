@@ -8,6 +8,8 @@
   * Model
   * LLM
   * Tokens
+  * Context
+  * Chat, Instruct, Completion
   * GPU
   * CPU
   * RAM
