@@ -19,28 +19,28 @@
 - ### [LiteLLM](https://litellm.vercel.app/)
   * What is LiteLLM?
     - LiteLLM is an OpenAI proxy server.
-  * [Installation](https://github.com/waywardspooky/jttw-ai/tree/main#install-litellm)
+  * [Installation](#install-litellm)
   * [Documentation](https://docs.litellm.ai/docs/proxy/quick_start)
   * [Repository](https://github.com/BerriAI/litellm/releases)
   * [Discord](https://discord.com/invite/wuPM9dRgDw)
 - ### [Guidance](https://github.com/guidance-ai/guidance)
   * What is Guidance?
     - Guidance is a large language model prompt templating language to enforce consistant and predictable formatted responses.
-  * [Installation](https://github.com/waywardspooky/jttw-ai/tree/main#install-guidance]
+  * [Installation](#install-guidance)
   * [Documentation](https://github.com/guidance-ai/guidance#example-notebooks)
   * [Example 1](https://betterprogramming.pub/a-deep-dive-into-guidances-source-code-16681a76fb20), [Example 2](https://medium.com/@akshayshinde/taking-control-of-language-models-with-microsofts-guidance-library-e711cd81654b), [Example 3](https://betterprogramming.pub/a-simple-agent-with-guidance-and-local-llm-c0865c97eaa9), [Example 4](https://www.theregister.com/2023/05/18/microsoft_guidance_project/)
   * [Repository](https://github.com/guidance-ai/guidance)
 - ### [MemGPT](https://memgpt.ai/)
   * What is MemGPT?
     - MemGPT is a memory manager for large language models that facilitates the ability to recall/remember information that well exceeds typical context length limits.
-  * [Installation](https://github.com/waywardspooky/jttw-ai/tree/main#install-memgpt)
+  * [Installation](#install-memgpt)
   * [Documentation](https://memgpt.readthedocs.io/en/latest/)
   * [Repository](https://github.com/cpacker/MemGPT)
   * [Discord](https://discord.gg/9GEQrxmVyE)
 - ### [AutoGen](https://microsoft.github.io/autogen/)
   * What is AutoGen?
     - Autogen is a multi-agent framework for directing multiple large language models to work together to complete tasks given to them as a group.
-  * [Installation](https://github.com/waywardspooky/jttw-ai/tree/main#install-autogen)
+  * [Installation](#install-autogen)
   * [Documentation](https://microsoft.github.io/autogen/docs/Getting-Started)
   * [Example 1](https://microsoft.github.io/autogen/docs/Examples)
   * [Repository](https://github.com/microsoft/autogen)
@@ -48,14 +48,14 @@
 - ### [Aider](https://aider.chat/)
   * What is Aider?
     - Aider is command line tool for instructing large language models to create, update, revise, improve, and document/comment code for local git repositories
-  * [Installation](https://github.com/waywardspooky/jttw-ai/tree/main#install-aider)
+  * [Installation](#install-aider)
   * [Documentation](https://aider.chat/examples/)
   * [Respository](https://github.com/paul-gauthier/aider)
 - ### [Sweep]
 - ### [PromptFoo](https://www.promptfoo.dev/)
   * What is PromptFoo?
     - PromptFoo is a unit testing and evaluation tool for prompts allowing for a better understand and insight into prompts that consistantly behave as expected, and those that need refactored.
-  * [Installation](https://github.com/waywardspooky/jttw-ai/tree/main#install-promptfoo)
+  * [Installation](#install-promptfoo)
   * [Documentation](https://www.promptfoo.dev/docs/intro/)
   * [Repository](https://github.com/promptfoo/promptfoo)
   * [Discord](https://discord.gg/gHPS9jjfbs)
