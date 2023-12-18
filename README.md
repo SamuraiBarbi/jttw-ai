@@ -259,31 +259,33 @@ Now that we have AutoGen in place we need to test to make sure it's working prop
 ```python
 from autogen import UserProxyAgent, ConversableAgent
 
-def main():
-    # Load LLM inference endpoints from an env variable or a file
-    # See https://microsoft.github.io/autogen/docs/FAQ#set-your-api-endpoints
-    # and OAI_CONFIG_LIST_sample.
-    # For example, if you have created an OAI_CONFIG_LIST file in the current working directory, that file will be used.
+# Create our configuration for the LiteLLM endpoint. API Key is required but the value can be anything.
+config_list = [
+    {
+        "model": "ollama/openhermes2.5-mistral",
+        "base_url": "http://0.0.0.0:8000",
+        "api_key": "key-to-success"
+    }
+]
+# Create the agent that uses the LLM.
+assistant = ConversableAgent(
+    "agent", 
+    llm_config = {
+        "config_list": config_list
+    }
+)
 
-    config_list = [
-        {
-            "model": "ollama/openhermes2.5-mistral",
-            "base_url": "http://0.0.0.0:8000",
-            "api_key": "key-to-success"
-        }
-    ]
-    # Create the agent that uses the LLM.
-    assistant = ConversableAgent("agent", llm_config={"config_list": config_list})
+# Create the agent that represents the user in the conversation.
+user_proxy = UserProxyAgent(
+    "user", 
+    code_execution_config = False
+)
 
-    # Create the agent that represents the user in the conversation.
-    user_proxy = UserProxyAgent("user", code_execution_config=False)
-
-    # Let the assistant start the conversation. It will end when the user types exit.
-    assistant.initiate_chat(user_proxy, message="How can I help you today?")
-
-
-if __name__ == "__main__":
-    main()
+# Let the assistant start the conversation.  It will end when the user types exit.
+assistant.initiate_chat(
+    user_proxy, 
+    message = "How can I help you today?"
+)
 ```
 Next we'll enter our python environment for AutoGen and run the python test script. If everything is working properly we should be having a conversation with our LLM being served from Autogen through LiteLLM to Ollama.
 ```bash
