@@ -12,7 +12,7 @@
 - ### [Ollama](https://ollama.ai/)
   * What is Ollama?
     - Ollama is a local large language model server.
-  * [Installation](https://github.com/waywardspooky/jttw-ai/tree/main#install-ollama)
+  * [Installation](#install-ollama)
   * [Documentation](https://github.com/jmorganca/ollama/tree/main/docs)
   * [Repository](https://github.com/jmorganca/ollama/tree/main)
   * [Discord](https://discord.com/invite/ollama)
