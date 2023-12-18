@@ -229,9 +229,14 @@ pip3 cache purge
 pip3 install -e .
 pip3 install transformers
 pip3 install torch
-export OPENAI_API_KEY=key-to-success
+
 ```
 ## Configure MemGPT
+MemGPT needs the OPENAI_API_KEY environment variable to be set and have a value. It doesn't matter what the value is, it just can't be blank.
+```bash
+export OPENAI_API_KEY=key-to-success
+```
+Next we need to configure MemGPT in a way that it will work specifically with sending requests through LiteLLM to Ollama, and process responses back properly. In order to do this we need to make sure that the LLM inference provider is local, the LLM backend is webui, and that we are pointing the default endpoint to our LitelLLM endpoint at http://0.0.0.0:8000. If everything has been done correctly, after finishing the configuration process we should see Saving config to the memgpt config path in terminal.
 ```bash
 memgpt configure
     ? Select LLM inference provider: local
