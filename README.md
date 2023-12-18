@@ -248,6 +248,7 @@ python3 autogen_litellm_test.py
 ## Preparing JTTW
 ```bash
 mkdir -p $HOME/LLM/jttw/jttw_venv
+cd $HOME/LLM/jttw/
 python3 -m venv $HOME/LLM/jttw/jttw_venv
 source $HOME/LLM/jttw/jttw_venv/bin/activate
 pip3 install guidance
