@@ -154,7 +154,7 @@ pip3 install litellm -U
 ## Test Guidance
 Now that we have Guidance in place we need to test to make sure it's working properly. We'll create a python script in our $HOME/LLM/jttw/guidance/ directory named guidance_litellm_test.py.
 ```python
-from guidance import models, gen, select, user, assistant
+from guidance import models, gen
 
 prompt = """
 why is the sky blue?
