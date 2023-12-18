@@ -119,6 +119,10 @@ Models Trained for Math/Calculations
 ```bash
 ollama run wizard-math
 ```
+Models Trained for Image Analysis
+```bash
+ollama run llava
+```
 ## Test Ollama
 Now that we have Ollama running and serving at least one model we need to test to make sure we're it's working properly.
 To test - in a new tab we're going to send a curl request to the Ollama server making sure to use one of the models we've downloaded in the "model": portion of the request. Since I've downloaded openhermes2.5-mistral that is what I'm going to specify in the "model": portion. It may take a moment but we should see activity in the tab where Ollama is running.
