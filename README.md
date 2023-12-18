@@ -98,6 +98,7 @@ Models Trained for Chatting/General Assistance
 ```bash
 ollama run openhermes2.5-mistral
 ollama run dolphin2.2-mistral:7b-q6_K
+ollama run dolphin-mixtral
 ```
 Models Trained for Coding/Programming
 ```bash
