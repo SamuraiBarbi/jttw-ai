@@ -149,6 +149,7 @@ source $HOME/LLM/jttw/guidance/guidance_venv/bin/activate
 python3 -m pip install --upgrade pip
 pip3 cache purge
 pip3 install guidance --upgrade
+pip3 install requests
 ```
 ## Test Guidance
 
