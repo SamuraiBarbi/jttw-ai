@@ -4,9 +4,13 @@
 
 ## Terms To Know
   * Prompt
+  * Inference
   * Model
   * LLM
   * Tokens
+  * GPU
+  * CPU
+  * RAM
   * VRAM
   * OOM
   * Quantize
