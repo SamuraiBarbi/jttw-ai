@@ -253,7 +253,7 @@ memgpt configure
 ```
 
 ## Test MemGPT
-Now that we have MemGPT running and sending requests to the LiteLLM endpoint we need to test to make sure it's working properly. We'll go through and have a conversation with the MemGPT agent.
+Now that we have MemGPT running and sending requests to the LiteLLM endpoint we need to test to make sure it's working properly. We'll go through and have a conversation with the MemGPT agent being served from MemGPT through LiteLLM to Ollama
 ```bash
 memgpt run --model openhermes2.5-mistral --model-endpoint http://0.0.0.0:8000 --debug
 ```
