@@ -50,7 +50,7 @@
 - ### [MemGPT](https://memgpt.ai/)
   * What is MemGPT?
     - MemGPT is a memory manager for LLM that facilitates the ability to recall/remember information that well exceeds typical context length limits.
-  * [Installation](#install-memgpt), [Testing](#test-memgpt)
+  * [Installation](#install-memgpt), [Configuring](#configure-memgpt), [Testing](#test-memgpt)
   * [Documentation](https://memgpt.readthedocs.io/en/latest/)
   * [Repository](https://github.com/cpacker/MemGPT)
   * [Discord](https://discord.gg/9GEQrxmVyE)
@@ -230,7 +230,9 @@ pip3 install -e .
 pip3 install transformers
 pip3 install torch
 export OPENAI_API_KEY=key-to-success
-
+```
+## Configure MemGPT
+```bash
 memgpt configure
     ? Select LLM inference provider: local
     ? Select LLM backend (select 'openai' if you have an OpenAI compatible proxy): webui
