@@ -213,7 +213,7 @@ lm = model_endpoint
 lm += prompt
 lm += gen()
 
-# Conver the response to a string value and print it so we can read it
+# Convert the response to a string value and print it so we can read it
 print(str(lm))
 ```
 Next we'll enter our python environment for Guidance and run the python test script. If everything is working properly we should be having output from our LLM being served from Guidance through LiteLLM to Ollama.
