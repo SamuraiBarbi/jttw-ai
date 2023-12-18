@@ -3,30 +3,30 @@
 **Jesus Take the Wheel**, an A.I. assistant for people like me
 
 ## Terms To Know
-  * Prompt
-  A prompt is a user-provided input or instruction given to an AI system to generate a specific response or perform a task.
-  * Inference
-  Inference in AI refers to the process of using a trained model to make predictions or generate outputs based on new, unseen data.
-  * Model
-  A model is a mathematical representation or framework that an AI system uses to learn patterns from data and make predictions or generate responses.
-  * LLM (Language Model)
-  A Language Model (LLM) is a type of AI model specifically designed for understanding and generating human language.
-  * Tokens
-  Tokens are units of input text that a language model processes. They can be as short as a single character or as long as an entire word.
-  * Context
-  Context refers to the information or surroundings that influence the interpretation of a given input or task in AI systems.
-  * Chat, Instruct, Completion
-  These terms represent different types of tasks that AI models can perform, such as engaging in conversation (Chat), following instructions (Instruct), or completing a given prompt (Completion).
-  * GPU (Graphics Processing Unit)
-  A GPU is a hardware component that accelerates the training and inference processes of AI models by parallelizing computations.
-  * CPU (Central Processing Unit)
-  A CPU is a general-purpose processor that handles tasks related to overall system management and execution of instructions in AI applications.
-  * RAM (Random Access Memory)
-  RAM is a type of computer memory that provides fast and temporary storage for data that the CPU is currently using or processing.
-  * VRAM (Video Random Access Memory)
-  VRAM is a specific type of RAM used by GPUs to store graphical data, such as textures and frame buffers, for rendering images.
-  * CUDA Cores
-  CUDA Cores are processing units within a GPU that handle parallel computations, commonly used in deep learning tasks.
+  * #### Prompt
+    A prompt is a user-provided input or instruction given to an AI system to generate a specific response or perform a task.
+  * #### Inference
+    Inference in AI refers to the process of using a trained model to make predictions or generate outputs based on new, unseen data.
+  * #### Model
+    A model is a mathematical representation or framework that an AI system uses to learn patterns from data and make predictions or generate responses.
+  * #### LLM (Language Model)
+    A Language Model (LLM) is a type of AI model specifically designed for understanding and generating human language.
+  * #### Tokens
+    Tokens are units of input text that a language model processes. They can be as short as a single character or as long as an entire word.
+  * #### Context
+    Context refers to the information or surroundings that influence the interpretation of a given input or task in AI systems.
+  * #### Chat, Instruct, Completion
+    These terms represent different types of tasks that AI models can perform, such as engaging in conversation (Chat), following instructions (Instruct), or completing a given prompt (Completion).
+  * #### GPU (Graphics Processing Unit)
+    A GPU is a hardware component that accelerates the training and inference processes of AI models by parallelizing computations.
+  * #### CPU (Central Processing Unit)
+    A CPU is a general-purpose processor that handles tasks related to overall system management and execution of instructions in AI applications.
+  * #### RAM (Random Access Memory)
+    RAM is a type of computer memory that provides fast and temporary storage for data that the CPU is currently using or processing.
+  * #### VRAM (Video Random Access Memory)
+    VRAM is a specific type of RAM used by GPUs to store graphical data, such as textures and frame buffers, for rendering images.
+  * #### CUDA Cores
+    CUDA Cores are processing units within a GPU that handle parallel computations, commonly used in deep learning tasks.
   * #### Tensor Cores
     Tensor Cores are specialized processing units in modern GPUs designed for accelerating matrix operations, particularly beneficial for deep learning workloads.
   * #### OOM (Out of Memory)
