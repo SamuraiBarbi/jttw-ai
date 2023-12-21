@@ -3,7 +3,6 @@ from autogen import UserProxyAgent, ConversableAgent
 # Create our configuration for the LiteLLM endpoint. API Key is required but the value can be anything.
 config_list = [
     {
-        "model": "ollama/openhermes2.5-mistral",
         "base_url": "http://0.0.0.0:8000",
         "api_key": "key-to-success"
     }
