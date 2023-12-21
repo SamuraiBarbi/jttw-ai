@@ -5,6 +5,7 @@ prompt = """
 why is the sky blue?
 """
 # Create our configuration for the LiteLLM endpoint. API Key is required but the value can be anything.
+# Guidance explicitly requires the exact model that was supplied in the LiteLLM --model argument, you cannot use the LiteLLM --alias value
 model_endpoint = models.LiteLLMCompletion(
     "ollama/openhermes2.5-mistral",
     temperature=0.8, 
